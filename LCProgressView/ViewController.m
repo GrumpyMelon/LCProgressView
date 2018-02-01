@@ -18,20 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     LCProgressView *hud = [[LCProgressView alloc] initWithDiameter:60];
+    hud.animationDuration = 4.0;
     hud.frame = CGRectMake(100, 100, hud.frame.size.width, hud.frame.size.height);
     
     LCProgressView *hud2 = [[LCProgressView alloc] initWithDiameter:60];
     hud2.pointColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
     hud2.pointWidth = 10.0;
+    hud2.animationDuration = 4.0;
     hud2.frame = CGRectMake(200, 100, hud2.frame.size.width, hud2.frame.size.height);
     
     LCProgressView *hud3 = [[LCProgressView alloc] initWithDiameter:60];
     hud3.pointNumber = 8;
+    hud3.animationDuration = 4.0;
     hud3.frame = CGRectMake(100, 200, hud3.frame.size.width, hud3.frame.size.height);
     
     LCProgressView *hud4 = [[LCProgressView alloc] initWithDiameter:80];
     hud4.pointNumber = 8;
-    hud4.animationDuration = 3.0;
+    hud4.animationDuration = 6.0;
     hud4.frame = CGRectMake(200, 200, hud4.frame.size.width, hud4.frame.size.height);
     
     [self.view addSubview:hud];
